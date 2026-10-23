@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <table align="center">
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="txtuser" id="" placeholder="Enter username"
+                    pattern="[A-Za-z]"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="txtpass" id="" placeholder="Enter password"
+                    pattern="[A-Za-z]{10,20}"></td>
+            </tr>
+            <tr>
+                <td>Umur</td>
+                <td><input type="number" name="txtumur" id="" min="18" max="100" ></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="txtjk" id="" value="L">Laki-laki
+                    <input type="radio" name="txtjk" id="" value="P">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="txtalamat" id="" rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" name="txtdob" id=""></td>
+            </tr>
+            <tr>
+                <td>Jurusan</td>
+                <td><select name="txtjur" id="">
+                    <optgroup label="FTD">
+                        <option value="TI">Teknik Informatika</option>
+                        <option value="SK">Sistem Komputer</option>
+                        <option value="DKV">Desain Komunikasi Visual</option>
+                    </optgroup>
+                    <optgroup label="FEB">
+                        <option value="AK">Akuntansi</option>
+                        <option value="MAN">Manajemen</option>
+                    </optgroup>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Kirim" name="cmdKirim">
+                <input type="reset" value="Batal" name="cmdbatal"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
